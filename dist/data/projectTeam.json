@@ -1,0 +1,46 @@
+{
+  "Team_Member": [
+    {
+      "name": "Ayoung Yoon",
+      "ProfileIMG": "",
+      "Position": "Assistant Professor, Library and Information Science",
+      "Description": "Ayoung Yoon, Ph.D. is the PI and an assistant professor in the Department of Library and Information Science at IUPUI. She was a RDA/US data share fellow from 2016-2017. Her dissertation, “Data Reuse and Users’ Trust Judgments,” received the Eugene Garfield Doctoral Dissertation Award. She has been actively involved in data curation and data sharing/reuse research, and her ultimate research goal is to construct effective community inclusive cyber infrastructure for data sharing and reuse through proper curation. She has published a number of articles in top rated journals, such as Journal of the Association of Information Science and Technology (JASIST), College & Research Libraries (C&RL), and International Journal of Digital Curation (IJDC). Her previous work has been funded by Indiana University, University of North Carolina at Chapel Hill, and the Alfred P. Sloan Foundation.",
+      "Team": "Project"
+    },
+    {
+      "name": "",
+      "ProfileIMG": "",
+      "Position": "",
+      "Description": "",
+      "Team": "Project"
+    },
+    {
+      "name": "",
+      "ProfileIMG": "",
+      "Position": "",
+      "Description": "",
+      "Team": "Project"
+    },
+    {
+      "name": "",
+      "ProfileIMG": "",
+      "Position": "",
+      "Description": "",
+      "Team": "Advisory"
+    },
+    {
+      "name": "",
+      "ProfileIMG": "",
+      "Position": "",
+      "Description": "",
+      "Team": "Advisory"
+    },
+    {
+      "name": "",
+      "ProfileIMG": "",
+      "Position": "",
+      "Description": "",
+      "Team": "Advisory"
+    }
+  ]
+}
