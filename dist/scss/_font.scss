@@ -1,0 +1,40 @@
+// Fonts: Roboto & M PLUS 1
+// import fonts using Font Face
+
+// Robort Fonts
+@font-face {
+  font-family: Roboto-Thin;
+  src: url(_fonts/Roboto/Roboto-Thin.ttf) format("truetype");
+}
+@font-face {
+  font-family: Roboto-Light;
+  src: url(_fonts/Roboto/Roboto-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(_fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: Roboto-Medium;
+  src: url(_fonts/Roboto/Roboto-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(_fonts/Roboto/Roboto-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: Roboto-Black;
+  src: url(_fonts/Roboto/Roboto-Black.ttf) format("truetype");
+}
+// Roboto Condensed
+@font-face {
+  font-family: Roboto-Condensed;
+  src: url(_fonts/Roboto/RobotoCondensed-VariableFont_wght.ttf)
+    format("truetype");
+}
+
+// M PLUS 1
+@font-face {
+  font-family: M_PLUS_1;
+  src: url(_fonts/M_Plus_1/MPLUS1-VariableFont_wght.ttf) format("truetype");
+}

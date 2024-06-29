@@ -1,0 +1,14 @@
+// Classes for Logos that scale on "Height"
+.mCodeLogo {
+  img {
+    height: 100%;
+  }
+}
+// Classes for Logos that scale on "Width"
+.IUTridentLogo,
+.luddyLogo,
+.imlsLogo {
+  img {
+    width: 100%;
+  }
+}

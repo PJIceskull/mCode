@@ -10,6 +10,6 @@ node_modules
 .npm 
 
 # project 
-dist/scss 
+# dist/scss 
 dist/css/style.css.map
 dist/css/styles.css.map

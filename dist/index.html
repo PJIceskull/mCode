@@ -6,23 +6,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mCode</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/4.0.0/font/MaterialIcons-Regular.ttf"
+    />
   </head>
   <body>
     <nav>
-      <a href="#home">Home</a>
-      <a href="#">Project Description</a>
-      <a href="#">People</a>
-      <a href="#">Project Partners</a>
-      <a href="#">Publications</a>
-      <a href="#">Contact</a>
+      <!-- Container for Logo and Site -->
+      <div class="topNavBar">
+        <!-- Logos -->
+        <div class="navLogos">
+          <div class="IUTridentLogo">
+            <img
+              src="images/logos/IU/trident-large.png"
+              alt="IU Trident Logo"
+            />
+          </div>
+          <div class="mCodeLogo">
+            <img
+              src="images/logos/mCode/mCode_Logo_Navy_1.svg"
+              alt="mCode Logo"
+            />
+          </div>
+        </div>
+
+        <div>
+          <a href=""><button class="SignInBTN">Sign In</button></a>
+          <a href="">Login</a>
+        </div>
+      </div>
+      <!-- Container for Page Links -->
+      <ul class="NavLinksBar">
+        <li><a href="#home">Home </a></li>
+        <li>
+          <a href="#">Project</a>
+          <div class="dropDown">
+            <a href="">Phase 1 (2017-2021)</a>
+            <a href="">Phase 2 (2021-2024)</a>
+            <a href="">Phase 3 (2024-2027)</a>
+          </div>
+        </li>
+        <li><a href="#people">People </a></li>
+        <li><a href="#">mCode </a></li>
+        <li><a href="#">Tools </a></li>
+        <li><a href="#">Publications </a></li>
+        <li><a href="#">Report </a></li>
+        <li><a href="#">Contact </a></li>
+      </ul>
     </nav>
 
-    <h1>mCode</h1>
+    <!-- <h1>mCode</h1> -->
 
     <!-- Main App Container -->
     <main id="app"></main>
 
-    <footer></footer>
+    <!-- Footer -->
+    <footer>
+      <!-- Container holding Links and Socials -->
+      <div class="contactSection">
+        <!-- Website Logo and Contact -->
+        <div class="mCodeLogo">
+          <img
+            src="images/logos/mCode/mCode_Logo_white.svg"
+            alt="White mCode Logo"
+          />
+          <strong><p>Contact Us</p></strong>
+          <div class="lightText">
+            <p>ayyoon@iupui.edu</p>
+            <img
+              src="images/icons/mail_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- Navigaton links -->
+        <ul>
+          <li><a href="">Home</a></li>
+          <li>
+            <a href="">Project</a>
+            <div class="arrowIcon">
+              <img
+                src="images/icons/chevron_right_24.svg"
+                alt="Arrow facing Right"
+              />
+            </div>
+          </li>
+          <li><a href="">People</a></li>
+          <li>
+            <a href="">mCode</a>
+            <div class="arrowIcon">
+              <img
+                src="images/icons/chevron_right_24.svg"
+                alt="Arrow facing Right"
+              />
+            </div>
+          </li>
+          <li><a href="">Tools</a></li>
+          <li>
+            <a href="">Publications</a>
+            <div class="arrowIcon">
+              <img
+                src="images/icons/chevron_right_24.svg"
+                alt="Arrow facing Right"
+              />
+            </div>
+          </li>
+          <li><a href="">Report</a></li>
+          <!-- <li><a href="">Contact</a></li> -->
+        </ul>
+      </div>
+      <!-- Container holding Copyright and Logos -->
+      <div class="bottomSection">
+        <div class="luddyLogo">
+          <img
+            src="images/logos/IU/luddy_lockup_PRINT_h14.svg"
+            alt="Luddy SOIC Print Logo"
+          />
+        </div>
+        <div class="imlsLogo">
+          <img src="images/logos/imls-logo.svg" alt="IMLS Logo" />
+        </div>
+        <p>Copyright &copy; mCode | Privacy Policy</p>
+      </div>
+    </footer>
 
     <!-- Links to Javascript files -->
     <script src="lib/jquery-3.7.1.min.js"></script>

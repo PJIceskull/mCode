@@ -1,0 +1,270 @@
+@font-face {
+  font-family: Roboto-Thin;
+  src: url(_fonts/Roboto/Roboto-Thin.ttf) format("truetype");
+}
+@font-face {
+  font-family: Roboto-Light;
+  src: url(_fonts/Roboto/Roboto-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(_fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: Roboto-Medium;
+  src: url(_fonts/Roboto/Roboto-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(_fonts/Roboto/Roboto-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: Roboto-Black;
+  src: url(_fonts/Roboto/Roboto-Black.ttf) format("truetype");
+}
+@font-face {
+  font-family: Roboto-Condensed;
+  src: url(_fonts/Roboto/RobotoCondensed-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+  font-family: M_PLUS_1;
+  src: url(_fonts/M_Plus_1/MPLUS1-VariableFont_wght.ttf) format("truetype");
+}
+.mCodeLogo img {
+  height: 100%;
+}
+
+.IUTridentLogo img,
+.luddyLogo img,
+.imlsLogo img {
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+p,
+a {
+  font-family: Roboto-Regular;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 1280px;
+  min-height: 800px;
+  background-color: cornflowerblue;
+  margin: 0 auto;
+}
+
+nav {
+  min-height: 50px;
+}
+nav a {
+  color: #000;
+  font-family: Roboto-Condensed;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.2s ease-in;
+}
+nav a:hover {
+  color: #007dd2;
+}
+
+.topNavBar,
+.NavLinksBar {
+  border-bottom: 1px solid #d7d7d7;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.topNavBar {
+  max-height: 110px;
+  justify-content: space-around;
+}
+.topNavBar .navLogos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  gap: 20px;
+}
+.topNavBar .IUTridentLogo img {
+  width: 97px;
+}
+.topNavBar .mCodeLogo {
+  height: 82px;
+}
+.topNavBar a,
+.topNavBar .SignInBTN {
+  font-weight: bold;
+}
+
+.NavLinksBar {
+  border-bottom: 1px solid #d7d7d7;
+  width: 100%;
+  padding: 20px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.NavLinksBar li {
+  position: relative;
+  height: 100%;
+}
+.NavLinksBar li a {
+  float: left;
+}
+.NavLinksBar li:hover .dropDown {
+  display: flex;
+}
+
+.dropDown {
+  display: none;
+  flex-direction: column;
+  background-color: #ffffff;
+  min-width: 200px;
+  padding-top: 18px;
+  padding-left: 18px;
+  position: absolute;
+  left: -72px;
+  top: 40px;
+  z-index: 1;
+  box-shadow: 0px 4px 10px 0.5px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.dropDown a {
+  margin-bottom: 22px;
+  font-family: Roboto-Condensed;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+footer {
+  background-color: coral;
+}
+footer .contactSection {
+  padding: 90px 80px;
+  background-color: #003152;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .contactSection .mCodeLogo {
+  height: 100px;
+}
+footer .contactSection .lightText {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+  gap: 10px;
+}
+footer .contactSection .lightText p,
+footer .contactSection .lightText a {
+  font-family: Roboto-Light;
+}
+footer .contactSection .lightText p {
+  margin-bottom: 0;
+}
+footer .contactSection ul {
+  list-style: none;
+  gap: 22px;
+}
+footer .contactSection ul li {
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition-duration: 0.3s;
+}
+footer .contactSection a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Roboto-Bold;
+  font-size: 20px;
+  transition-duration: 0.3s;
+}
+footer .contactSection a:hover {
+  color: #91bed4;
+  margin-right: 8px;
+}
+footer .contactSection a:active {
+  transition-duration: 0.1s;
+  color: #d9e8f5;
+}
+footer .contactSection .arrowIcon {
+  height: 30px;
+}
+footer .contactSection .arrowIcon img {
+  height: 100%;
+}
+footer .bottomSection {
+  background-color: #ffffff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .bottomSection .luddyLogo {
+  max-width: 232px;
+}
+footer .bottomSection .imlsLogo {
+  max-width: 230px;
+}
+footer .bottomSection p {
+  margin-bottom: 0;
+  font-family: Roboto-Condensed;
+  font-weight: 500;
+}
+
+button {
+  cursor: pointer;
+}
+
+.SignInBTN {
+  background-color: #003152;
+  color: #ffffff;
+  padding: 17px 22px;
+  border-radius: 10px;
+  border: none;
+  font-family: Roboto-Condensed;
+  font-size: 16px;
+  margin-right: 20px;
+}
+.SignInBTN:hover {
+  background-color: #004f85;
+}
+.SignInBTN:active {
+  background-color: #ffffff;
+  color: #004f85;
+  outline: 2px solid #003152;
+}
+
+/*# sourceMappingURL=styles.css.map */

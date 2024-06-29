@@ -1,0 +1,108 @@
+nav {
+  min-height: 50px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-evenly;
+  a {
+    color: #000;
+    font-family: Roboto-Condensed;
+    font-weight: $medium;
+    text-decoration: none;
+    transition: 0.2s ease-in;
+    // hr {
+    //   width: 0;
+    //   transition: 0.2s ease-in;
+    //   border: 1.5px solid rgba($color: #000000, $alpha: 0);
+    // }
+    &:hover {
+      color: lighten(
+        $color: map-get($map: $colors, $key: "navy"),
+        $amount: 25%
+      );
+      // hr {
+      //   width: 100%;
+      //   border: 1.5px solid #000;
+      // }
+    }
+  }
+}
+.topNavBar,
+.NavLinksBar {
+  border-bottom: 1px solid #d7d7d7;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.topNavBar {
+  // background-color: skyblue;
+  // height: 110px;
+  max-height: 110px;
+  justify-content: space-around;
+  .navLogos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    gap: 20px;
+  }
+  .IUTridentLogo {
+    img {
+      width: 97px;
+    }
+  }
+  .mCodeLogo {
+    height: 82px;
+  }
+  a,
+  .SignInBTN {
+    font-weight: bold;
+  }
+}
+
+.NavLinksBar {
+  border-bottom: 1px solid #d7d7d7;
+  // height: 80px;
+  width: 100%;
+  padding: 20px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  li {
+    position: relative;
+    height: 100%;
+    // overflow: hidden;
+    a {
+      float: left;
+    }
+    &:hover {
+      .dropDown {
+        display: flex;
+        // opacity: 100;
+      }
+    }
+  }
+}
+.dropDown {
+  display: none;
+  // opacity: 0;
+  flex-direction: column;
+  background-color: map-get($map: $colors, $key: "white");
+  min-width: 200px;
+  padding-top: 18px;
+  padding-left: 18px;
+  position: absolute;
+  // float: left;
+  left: -72px;
+  top: 40px;
+  // top: 28px;
+  z-index: 1;
+  box-shadow: 0px 4px 10px 0.5px rgba($color: #000000, $alpha: 0.25);
+  border-radius: 5px;
+  a {
+    margin-bottom: 22px;
+    font-family: Roboto-Condensed;
+    font-weight: $light;
+    font-size: 16px;
+  }
+}

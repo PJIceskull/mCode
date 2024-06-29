@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+p,
+a {
+  font-family: Roboto-Regular;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: $site-width;
+  min-height: $site-height;
+  background-color: cornflowerblue;
+  margin: 0 auto;
+}
