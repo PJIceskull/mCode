@@ -161,6 +161,9 @@ nav a:hover {
   font-size: 16px;
 }
 
+footer {
+  margin-top: 30px;
+}
 footer .contactSection {
   padding: 90px 80px;
   background-color: #003152;
@@ -286,13 +289,17 @@ button {
 }
 .peopleSection .sectionContainer {
   max-width: 1000px;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .peopleSection section {
   width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
-  margin-bottom: 50px;
 }
 .peopleSection .profileSection {
   max-width: 225px;
