@@ -71,12 +71,8 @@ a {
 }
 
 #app {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   max-width: 1280px;
   min-height: 800px;
-  background-color: cornflowerblue;
   margin: 0 auto;
 }
 
@@ -165,9 +161,6 @@ nav a:hover {
   font-size: 16px;
 }
 
-footer {
-  background-color: coral;
-}
 footer .contactSection {
   padding: 90px 80px;
   background-color: #003152;
@@ -265,6 +258,83 @@ button {
   background-color: #ffffff;
   color: #004f85;
   outline: 2px solid #003152;
+}
+
+.hero {
+  max-width: 1280px;
+  height: 500px;
+}
+.hero .heroImage {
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), black), url("../images/Hero/pexels-thirdman-5256693.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.peopleSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.peopleSection h1 {
+  font-family: M_PLUS_1;
+  font-size: 64px;
+  color: #003152;
+  margin-bottom: 50px;
+}
+.peopleSection .sectionContainer {
+  max-width: 1000px;
+}
+.peopleSection section {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+.peopleSection .profileSection {
+  max-width: 225px;
+  margin-right: 35px;
+}
+.peopleSection .profileSection h3 {
+  font-size: 32px;
+  color: #91bed4;
+  font-family: Roboto-Condensed;
+  text-decoration: underline;
+  margin-bottom: 0;
+  text-align: center;
+}
+.peopleSection .profileSection p {
+  font-family: Roboto-Condensed;
+  font-size: 20px;
+}
+.peopleSection .profileIMG {
+  width: 225px;
+  height: 225px;
+  border-radius: 25px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+.peopleSection .profileIMG img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.peopleSection .profileText {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.peopleSection .profileText p {
+  text-align: center;
+}
+.peopleSection .descriptionText {
+  font-size: 20px;
+  line-height: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */

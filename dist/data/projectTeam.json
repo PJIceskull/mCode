@@ -1,45 +1,66 @@
 {
-  "Team_Member": [
+  "Team_Members": [
     {
       "name": "Ayoung Yoon",
-      "ProfileIMG": "",
+      "ProfileIMG": "pexels-sora-shimazaki-5668886.jpg",
       "Position": "Assistant Professor, Library and Information Science",
-      "Description": "Ayoung Yoon, Ph.D. is the PI and an assistant professor in the Department of Library and Information Science at IUPUI. She was a RDA/US data share fellow from 2016-2017. Her dissertation, “Data Reuse and Users’ Trust Judgments,” received the Eugene Garfield Doctoral Dissertation Award. She has been actively involved in data curation and data sharing/reuse research, and her ultimate research goal is to construct effective community inclusive cyber infrastructure for data sharing and reuse through proper curation. She has published a number of articles in top rated journals, such as Journal of the Association of Information Science and Technology (JASIST), College & Research Libraries (C&RL), and International Journal of Digital Curation (IJDC). Her previous work has been funded by Indiana University, University of North Carolina at Chapel Hill, and the Alfred P. Sloan Foundation.",
+      "Description": "<strong>Ayoung Yoon</strong>, Ph.D. is the PI and an assistant professor in the Department of Library and Information Science at IUPUI. She was a RDA/US data share fellow from 2016-2017. Her dissertation, “Data Reuse and Users’ Trust Judgments,” received the Eugene Garfield Doctoral Dissertation Award. She has been actively involved in data curation and data sharing/reuse research, and her ultimate research goal is to construct effective community inclusive cyber infrastructure for data sharing and reuse through proper curation. She has published a number of articles in top rated journals, such as Journal of the Association of Information Science and Technology (JASIST), College & Research Libraries (C&RL), and International Journal of Digital Curation (IJDC). Her previous work has been funded by Indiana University, University of North Carolina at Chapel Hill, and the Alfred P. Sloan Foundation.",
       "Team": "Project"
     },
     {
-      "name": "",
-      "ProfileIMG": "",
-      "Position": "",
-      "Description": "",
+      "name": "Andrea Copeland",
+      "ProfileIMG": "pexels-sora-shimazaki-5668886.jpg",
+      "Position": "Associate Professor, DLIS ",
+      "Description": "Andrea Copeland, Ph.D. is the Co-PI and an associate professor in the DLIS at IUPUI. For over a decade, she has researched the relationship between communities and public libraries. Current emphasis is on connecting the cultural outputs of individuals and community groups to a sustainable preservation infrastructure. She is the coeditor of the volume, Participatory Heritage published by Facet in 2017.",
       "Team": "Project"
     },
     {
-      "name": "",
-      "ProfileIMG": "",
-      "Position": "",
-      "Description": "",
+      "name": "Paula McNally",
+      "ProfileIMG": "pexels-sora-shimazaki-5668886.jpg",
+      "Position": "Project Assistant, DLIS",
+      "Description": "Paula McNally, Ph.D. is a project assistant and currently an MLS student in the DLIS at IUPUI. She is a former textual editor at the Center for Dewey Studies where the works of American philosopher and educator John Dewey were collected, edited, and published. Her editing credits include The Class Lectures of John Dewey, vol. 1 and 2, and The Collected Works of John Dewey, supplemental vol. 1. Her goal is to work in an archive or with special collections upon completion of the MLS.",
       "Team": "Project"
     },
     {
-      "name": "",
-      "ProfileIMG": "",
-      "Position": "",
-      "Description": "",
+      "name": "Nate Hill",
+      "ProfileIMG": "pexels-sora-shimazaki-5668886.jpg",
+      "Position": "Executive Director",
+      "Description": "Nate Hill is the Executive Director of the Metropolitan New York Library Council (METRO), a multi-type library consortium serving over 250 organizations in New York City and Westchester County. He has been involved in the Open Data initiative when he served as Deputy Director of the Chattanooga Public Library.",
       "Team": "Advisory"
     },
     {
-      "name": "",
-      "ProfileIMG": "",
-      "Position": "",
-      "Description": "",
+      "name": "David Leonard",
+      "ProfileIMG": "pexels-sora-shimazaki-5668886.jpg",
+      "Position": "President of Boston Public Library",
+      "Description": "David Leonard, president of Boston Public Library, leads the 170-year old institution, one of Boston’s great educational, cultural and civic treasures. Appointed president by the Library’s Board of Trustees and Mayor Martin J. Walsh in June 2016, David’s focus is on developing the BPL as a twenty first century institution providing dynamic library experiences to the residents of Boston, of Massachusetts and beyond. He has been involved in Boston Public Library’s recent initiative to develop open data collection for the city of Boston.",
       "Team": "Advisory"
     },
     {
-      "name": "",
-      "ProfileIMG": "",
-      "Position": "",
-      "Description": "",
+      "name": "Rebecca Stavick",
+      "ProfileIMG": "pexels-sora-shimazaki-5668886.jpg",
+      "Position": "Executive Director, Do Space",
+      "Description": "Rebecca Stavick is the Executive Director of Do Space, the nation’s first technology library. Stavick actively manages Do Space relationships, direction, and strategy, bringing technology industry leadership and five years of public library sector experience to her role. Prior to developing the Do Space project, Stavick earned a Master’s of Library and Information Science degree and served as Nebraska’s first Code for America Brigade Captain in 2012. Stavick is a 2016 “40 Under 40” Omaha Business Executives award recipient and a current member of the Urban Libraries Council Executive Board.",
+      "Team": "Advisory"
+    },
+    {
+      "name": "Megan Sapp Nelson",
+      "ProfileIMG": "pexels-sora-shimazaki-5668886.jpg",
+      "Position": "Professor",
+      "Description": "Megan Sapp Nelson is a Professor of Library Sciences at Purdue University Libraries. Her research investigates the skills necessary to efficiently and effectively manage data and the pedagogy that can most effectively teach those skills. She is an award winning author and researcher, including the ASEE Engineering Libraries’ Division 2012 Best Publication Award for “Determining Data Information Literacy Needs: A Study.",
+      "Team": "Advisory"
+    },
+    {
+      "name": "John Helling",
+      "ProfileIMG": "pexels-sora-shimazaki-5668886.jpg",
+      "Position": "Director of Public Services",
+      "Description": "John Helling is the Director of Public Services in the Indianapolis Public Library. He has over ten years of experience working with the public in the library environment. In his various roles he has sought the public’s input for strategic planning and used data to help calculate the community’s return on investment in public libraries.",
+      "Team": "Advisory"
+    },
+    {
+      "name": "Ellen Cutter",
+      "ProfileIMG": "pexels-sora-shimazaki-5668886.jpg",
+      "Position": "Director of Strategy and Research",
+      "Description": "Ellen Cutter is the former Director at Community Research Institute at Fort Wayne and currently the Director of Strategy and Research at Greater Fort Wayne Inc. She is passionate about telling stories with data, tracking a multitude of economic data points to better understand the opportunities for Allen County’s future.",
       "Team": "Advisory"
     }
   ]
