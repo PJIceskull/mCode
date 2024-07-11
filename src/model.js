@@ -8,7 +8,7 @@ export function changeRoute() {
 
   if (pageID != "") {
     $.get(`pages/${pageID}.html`, function (data) {
-      console.log("data " + data);
+      // console.log("data " + data);
       $("#app").html(data);
     });
     if (pageID == "people") {
@@ -23,7 +23,7 @@ export function changeRoute() {
     }
   } else {
     $.get(`pages/home.html`, function (data) {
-      console.log("data " + data);
+      // console.log("data " + data);
       $("#app").html(data);
     });
   }
