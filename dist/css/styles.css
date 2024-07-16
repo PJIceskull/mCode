@@ -323,11 +323,12 @@ button:active {
   border: 4px solid #91bed4;
   box-shadow: 20px 20px 0px 0px #91bed4;
   padding: 30px 35px;
+  margin: 0 45px;
   margin-bottom: 175px;
 }
 .ourMissionBox h1 {
   text-decoration: underline;
-  text-decoration-thickness: 4px;
+  text-decoration-thickness: 3px;
   color: #003152;
   text-align: center;
 }
@@ -341,6 +342,9 @@ button:active {
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 80px;
+  flex-wrap: wrap;
+  gap: 45px;
+  padding: 0 15px;
 }
 
 .pageCard {
@@ -359,6 +363,7 @@ button:active {
 }
 .pageCard .cardImage img {
   height: 100%;
+  width: 100%;
   object-fit: cover;
   object-position: center;
 }
@@ -412,6 +417,69 @@ button:active {
   border: 2px solid #91bed4;
 }
 
+.featuredSection {
+  margin-bottom: 60px;
+}
+.featuredSection h1 {
+  color: #003152;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+.featuredSection section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 45px;
+  padding: 0 35px;
+}
+
+.featuredBanner {
+  color: #ffffff;
+  background-color: #003152;
+  padding: 16px 20px;
+  margin-bottom: 60px;
+  max-width: 505px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+.featuredBanner p {
+  font-family: Roboto-Condensed;
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+.projectCard {
+  max-width: 530px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 8px 8px 10px 2px rgba(0, 0, 0, 0.25);
+}
+.projectCard .projectPreview {
+  height: 345px;
+  margin-bottom: 30px;
+}
+.projectCard h2 {
+  font-size: 36px;
+}
+
+.projectPreview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width: 780px) {
+  .miniPageLinks {
+    padding: 0 25px;
+  }
+  .miniPageLinks .pageCard {
+    max-width: 475px;
+  }
+  .miniPageLinks .pageCard .cardLink p {
+    max-width: 275px;
+  }
+}
 .aboutHero {
   max-width: 1280px;
   height: 500px;
