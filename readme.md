@@ -17,4 +17,9 @@ Design Prototype
 
 # Domain Name
 
-- mcode.com is alreday taken by this [site](mcode.com).
+Ideas for website domain name
+
+- mcodecommunity.com
+- mcodecommunity.net
+
+<!-- - mcode.com is alreday taken by this [site](mcode.com). -->
