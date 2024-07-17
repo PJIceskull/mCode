@@ -59,6 +59,33 @@ nav {
   }
 }
 
+.loginLinks {
+}
+
+.profileLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  .SignInBTN {
+    background-color: map-get($map: $colors, $key: "skyblue");
+  }
+  .profile {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: top;
+      // filter: invert(13%) sepia(99%) saturate(1380%) hue-rotate(182deg)
+      //   brightness(90%) contrast(101%);
+    }
+  }
+}
+
 .NavLinksBar {
   border-bottom: 1px solid #d7d7d7;
   // height: 80px;
