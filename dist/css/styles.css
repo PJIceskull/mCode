@@ -561,6 +561,25 @@ button:active {
   line-height: 30px;
 }
 
+.loginBox h1,
+.createForm h1 {
+  font-size: 48px;
+  font-style: italic;
+  color: #003152;
+}
+.loginBox input,
+.createForm input {
+  font-family: Roboto-Condensed;
+  border: 3px solid #003152;
+  outline: none;
+  border-radius: 5px;
+}
+.loginBox input::placeholder,
+.createForm input::placeholder {
+  font-weight: 300;
+  font-style: italic;
+}
+
 .loginBox {
   margin: 0 auto;
   display: flex;
@@ -571,24 +590,11 @@ button:active {
   max-width: 500px;
   padding: 40px 35px;
 }
-.loginBox h1 {
-  font-size: 48px;
-  font-style: italic;
-  color: #003152;
-}
 .loginBox input {
   margin-bottom: 34px;
-  border: 3px solid #003152;
-  border-radius: 5px;
   padding: 22px 18px;
-  outline: none;
   width: 100%;
-  font-family: Roboto-Condensed;
   font-size: 24px;
-}
-.loginBox input::placeholder {
-  font-weight: 300;
-  font-style: italic;
 }
 .loginBox a {
   text-decoration: none;
@@ -612,6 +618,36 @@ button:active {
   transition-duration: 0.25s;
   width: 100%;
   margin-bottom: 30px;
+}
+
+.createForm {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 0 20px;
+}
+.createForm h1 {
+  text-decoration: underline;
+  margin-bottom: 34px;
+}
+.createForm span {
+  font-weight: bold;
+  color: #f26101;
+}
+.createForm input {
+  font-size: 28px;
+  padding: 25px 28px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.createForm input::placeholder {
+  color: #d9e8f5;
+}
+.createForm .submitBox {
+  font-size: 28px;
+  width: 200px;
+  padding: 23px;
+  margin-left: 36%;
 }
 
 /*# sourceMappingURL=styles.css.map */
