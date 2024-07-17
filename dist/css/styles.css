@@ -32,6 +32,7 @@
 }
 .mCodeLogo img {
   height: 100%;
+  width: 100%;
 }
 
 .IUTridentLogo img,
@@ -116,8 +117,8 @@ nav a:hover {
   height: 100%;
   gap: 20px;
 }
-.topNavBar .IUTridentLogo img {
-  width: 97px;
+.topNavBar .IUTridentLogo {
+  max-width: 97px;
 }
 .topNavBar .mCodeLogo {
   height: 82px;
@@ -128,7 +129,7 @@ nav a:hover {
 }
 
 .profileLink {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -250,6 +251,9 @@ footer .contactSection .arrowIcon {
 footer .contactSection .arrowIcon img {
   height: 100%;
 }
+footer hr {
+  display: none;
+}
 footer .bottomSection {
   background-color: #ffffff;
   height: 100px;
@@ -269,6 +273,28 @@ footer .bottomSection p {
   font-weight: 500;
 }
 
+@media screen and (max-width: 780px) {
+  footer .contactSection {
+    padding: 45px 20px;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 780px) and (max-width: 525px) {
+  footer .contactSection {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 20px;
+    gap: 20px;
+  }
+  footer .contactSection .lightText {
+    margin-bottom: 0;
+  }
+  footer .contactSection hr {
+    display: block;
+    width: 100%;
+    border: 2px solid;
+  }
+}
 button {
   cursor: pointer;
   background-color: #003152;
