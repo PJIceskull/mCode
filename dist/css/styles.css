@@ -256,10 +256,13 @@ footer hr {
 }
 footer .bottomSection {
   background-color: #ffffff;
-  height: 100px;
+  min-height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 10px;
 }
 footer .bottomSection .luddyLogo {
   max-width: 232px;
