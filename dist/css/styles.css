@@ -100,7 +100,6 @@ nav a:hover {
 
 .topNavBar,
 .NavLinksBar {
-  border-bottom: 1px solid #d7d7d7;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -108,7 +107,10 @@ nav a:hover {
 
 .topNavBar {
   max-height: 110px;
-  justify-content: space-around;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 15px;
 }
 .topNavBar .navLogos {
   display: flex;
@@ -116,9 +118,6 @@ nav a:hover {
   justify-content: space-evenly;
   height: 100%;
   gap: 20px;
-}
-.topNavBar .IUTridentLogo {
-  max-width: 97px;
 }
 .topNavBar .mCodeLogo {
   height: 82px;
@@ -151,6 +150,7 @@ nav a:hover {
 }
 
 .NavLinksBar {
+  border-top: 1px solid #d7d7d7;
   border-bottom: 1px solid #d7d7d7;
   width: 100%;
   padding: 20px;
