@@ -38,6 +38,24 @@ h4 {
   // justify-content: space-evenly;
   max-width: $site-width;
   min-height: $site-height;
-  // background-color: cornflowerblue;
   margin: 0 auto;
+}
+.pageContent {
+  padding-top: 60px;
+  header {
+    h1 {
+      font-style: italic;
+      text-decoration: underline;
+      text-decoration-thickness: 3px;
+    }
+  }
+  h1 {
+    font-weight: $bold;
+    font-size: 64px;
+    color: map-get($map: $colors, $key: "navy");
+  }
+  h2 {
+    color: map-get($map: $colors, $key: "navy");
+    font-size: 36px;
+  }
 }
