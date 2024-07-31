@@ -1,0 +1,233 @@
+.modelImage {
+  margin: 0 auto;
+  text-align: center;
+  h3 {
+    font-size: 32px;
+    color: map-get($map: $colors, $key: "navy");
+  }
+  img {
+    height: 100%;
+    width: 100%;
+    max-width: 975px;
+  }
+  .imageDesc {
+    font-size: 20px;
+  }
+}
+
+.teamContainerRow {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  margin-bottom: 45px;
+}
+.teamContainerCol {
+  min-height: 100px;
+  //   margin-bottom: 60px;
+  margin-bottom: clamp(30px, 3.75vw, 60px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 32px;
+}
+.profileImg {
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: goldenrod;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+.researchProfile {
+  max-width: 345px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 20px;
+  .profileImg {
+    width: 240px;
+    height: 250px;
+  }
+  h1 {
+    font-size: 32px;
+    font-family: Roboto-Bold;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+.advisoryProfile {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 35px;
+  .profileImg {
+    min-width: 200px;
+    width: 225px;
+    height: 250px;
+  }
+  .advisText {
+    h1 {
+      // font-size: 64px;
+      font-size: 32px;
+      text-decoration: underline;
+      text-decoration-thickness: 2.5px;
+    }
+    p {
+      max-width: 900px;
+      margin-bottom: 0;
+    }
+  }
+}
+.researchLogos {
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  .partnerLogo {
+    width: 250px;
+    height: 250px;
+  }
+}
+.libraryLogos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  .partnerLogo {
+    width: 250px;
+    height: 250px;
+  }
+}
+.partnerLogo {
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+.areaServices {
+  //   font-size: 32px;
+  font-size: clamp(21px, 2vw, 32px);
+  font-family: Roboto-Regular;
+  list-style: none;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  span {
+    font-family: Roboto-Bold;
+    color: map-get($map: $colors, $key: "orange");
+  }
+}
+
+.phaseButtons {
+  max-width: 1230px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  a {
+    text-decoration: none;
+  }
+}
+.phaseBTN {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  width: 275px;
+  transition-duration: 0.3s;
+  gap: 5px;
+  p {
+    color: map-get($map: $colors, $key: "white");
+    font-family: Roboto-Condensed;
+    font-weight: $bold;
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  img {
+    height: 62px;
+  }
+}
+.prevPhase {
+  background-color: map-get($map: $colors, $key: "skyblue");
+  &:hover {
+    background-color: lighten(
+      $color: map-get($map: $colors, $key: "skyblue"),
+      $amount: 15
+    );
+  }
+  &:active {
+    background-color: map-get($map: $colors, $key: "white");
+    outline: none;
+    p {
+      color: map-get($map: $colors, $key: "skyblue");
+    }
+  }
+}
+.nextPhase {
+  background-color: map-get($map: $colors, $key: "orange");
+  &:hover {
+    background-color: lighten(
+      $color: map-get($map: $colors, $key: "orange"),
+      $amount: 15
+    );
+  }
+  &:active {
+    background-color: map-get($map: $colors, $key: "white");
+    outline: none;
+    p {
+      color: map-get($map: $colors, $key: "orange");
+    }
+  }
+}
+@media screen and (max-width: $iPad-width) {
+  .researchLogos {
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: $phone-width) {
+  .advisoryProfile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    .profileImg {
+      width: 230px;
+      height: 245px;
+    }
+    .advisText {
+      p {
+        max-width: 275px;
+      }
+    }
+  }
+  .researchLogos {
+    justify-content: center;
+    .partnerLogo {
+      width: 225px;
+      height: 175px;
+    }
+  }
+  .libraryLogos {
+    justify-content: center;
+  }
+}

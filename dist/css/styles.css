@@ -73,8 +73,7 @@ a {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-family: Roboto-Condensed;
 }
 
@@ -87,21 +86,67 @@ h4 {
 .pageContent {
   padding-top: 60px;
 }
+.pageContent header {
+  margin-bottom: 25px;
+}
+.pageContent header h1,
+.pageContent header h2 {
+  margin-bottom: 0;
+}
 .pageContent header h1 {
   font-style: italic;
   text-decoration: underline;
   text-decoration-thickness: 3px;
 }
-.pageContent h1 {
-  font-weight: 700;
-  font-size: 64px;
-  color: #003152;
+.pageContent header h2 {
+  font-family: Roboto-Condensed;
+  font-weight: 500;
 }
+.pageContent header h2 span {
+  font-style: italic;
+  font-weight: 400;
+}
+.pageContent h1,
 .pageContent h2 {
   color: #003152;
+}
+.pageContent h1 {
+  font-weight: 700;
+  font-size: clamp(48px, 4vw, 64px);
+}
+.pageContent h2 {
   font-size: 36px;
+  font-size: clamp(28px, 2vw, 36px);
+  font-family: Roboto-Bold;
+}
+.pageContent h3 {
+  font-family: Roboto-Bold;
+  font-size: clamp(24px, 1.75vw, 28px);
+}
+.pageContent p {
+  max-width: 1230px;
+  font-size: clamp(18px, 1.5vw, 24px);
+  margin-bottom: 20px;
+}
+.pageContent p strong {
+  font-family: Roboto-Bold;
+}
+.pageContent p a {
+  color: #f26101;
+  transition-duration: 0.25s;
+}
+.pageContent p a:hover {
+  color: #fe8d41;
+}
+.pageContent p a:active {
+  color: #ffe8da;
 }
 
+@media screen and (max-width: 1280px) {
+  .pageContent {
+    padding: 60px 25px 30px;
+  }
+}
 nav {
   min-height: 50px;
 }
@@ -702,6 +747,235 @@ button:active {
   object-position: center;
   height: 100%;
   width: 100%;
+}
+
+.modelImage {
+  margin: 0 auto;
+  text-align: center;
+}
+.modelImage h3 {
+  font-size: 32px;
+  color: #003152;
+}
+.modelImage img {
+  height: 100%;
+  width: 100%;
+  max-width: 975px;
+}
+.modelImage .imageDesc {
+  font-size: 20px;
+}
+
+.teamContainerRow {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  margin-bottom: 45px;
+}
+
+.teamContainerCol {
+  min-height: 100px;
+  margin-bottom: clamp(30px, 3.75vw, 60px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.profileImg {
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: goldenrod;
+}
+.profileImg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.researchProfile {
+  max-width: 345px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 20px;
+}
+.researchProfile .profileImg {
+  width: 240px;
+  height: 250px;
+}
+.researchProfile h1 {
+  font-size: 32px;
+  font-family: Roboto-Bold;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  margin-bottom: 0;
+}
+.researchProfile p {
+  font-size: 20px;
+}
+
+.advisoryProfile {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 35px;
+}
+.advisoryProfile .profileImg {
+  min-width: 200px;
+  width: 225px;
+  height: 250px;
+}
+.advisoryProfile .advisText h1 {
+  font-size: 32px;
+  text-decoration: underline;
+  text-decoration-thickness: 2.5px;
+}
+.advisoryProfile .advisText p {
+  max-width: 900px;
+  margin-bottom: 0;
+}
+
+.researchLogos {
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.researchLogos .partnerLogo {
+  width: 250px;
+  height: 250px;
+}
+
+.libraryLogos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.libraryLogos .partnerLogo {
+  width: 250px;
+  height: 250px;
+}
+
+.partnerLogo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.areaServices {
+  font-size: clamp(21px, 2vw, 32px);
+  font-family: Roboto-Regular;
+  list-style: none;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.areaServices span {
+  font-family: Roboto-Bold;
+  color: #f26101;
+}
+
+.phaseButtons {
+  max-width: 1230px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.phaseButtons a {
+  text-decoration: none;
+}
+
+.phaseBTN {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  width: 275px;
+  transition-duration: 0.3s;
+  gap: 5px;
+}
+.phaseBTN p {
+  color: #ffffff;
+  font-family: Roboto-Condensed;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+.phaseBTN img {
+  height: 62px;
+}
+
+.prevPhase {
+  background-color: #91bed4;
+}
+.prevPhase:hover {
+  background-color: #c8dfea;
+}
+.prevPhase:active {
+  background-color: #ffffff;
+  outline: none;
+}
+.prevPhase:active p {
+  color: #91bed4;
+}
+
+.nextPhase {
+  background-color: #f26101;
+}
+.nextPhase:hover {
+  background-color: #fe8d41;
+}
+.nextPhase:active {
+  background-color: #ffffff;
+  outline: none;
+}
+.nextPhase:active p {
+  color: #f26101;
+}
+
+@media screen and (max-width: 780px) {
+  .researchLogos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 430px) {
+  .advisoryProfile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .advisoryProfile .profileImg {
+    width: 230px;
+    height: 245px;
+  }
+  .advisoryProfile .advisText p {
+    max-width: 275px;
+  }
+  .researchLogos {
+    justify-content: center;
+  }
+  .researchLogos .partnerLogo {
+    width: 225px;
+    height: 175px;
+  }
+  .libraryLogos {
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

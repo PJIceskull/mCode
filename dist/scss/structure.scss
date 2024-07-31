@@ -27,8 +27,7 @@ a {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-family: Roboto-Condensed;
 }
 
@@ -43,19 +42,73 @@ h4 {
 .pageContent {
   padding-top: 60px;
   header {
+    margin-bottom: 25px;
+    h1,
+    h2 {
+      margin-bottom: 0;
+    }
     h1 {
       font-style: italic;
       text-decoration: underline;
       text-decoration-thickness: 3px;
     }
+    h2 {
+      font-family: Roboto-Condensed;
+      font-weight: $medium;
+      span {
+        font-style: italic;
+        font-weight: $regular;
+      }
+    }
+  }
+  h1,
+  h2 {
+    color: map-get($map: $colors, $key: "navy");
   }
   h1 {
     font-weight: $bold;
-    font-size: 64px;
-    color: map-get($map: $colors, $key: "navy");
+    // font-size: 64px;
+    font-size: clamp(48px, 4vw, 64px);
   }
   h2 {
-    color: map-get($map: $colors, $key: "navy");
     font-size: 36px;
+    font-size: clamp(28px, 2vw, 36px);
+    font-family: Roboto-Bold;
+  }
+  h3 {
+    font-family: Roboto-Bold;
+    // font-size: 18px;
+    // font-size: 28px;
+    font-size: clamp(24px, 1.75vw, 28px);
+  }
+  p {
+    max-width: 1230px;
+    // font-size: 21px;
+    font-size: clamp(18px, 1.5vw, 24px);
+    margin-bottom: 20px;
+    strong {
+      font-family: Roboto-Bold;
+    }
+    a {
+      color: map-get($map: $colors, $key: "orange");
+      transition-duration: 0.25s;
+      &:hover {
+        color: lighten(
+          $color: map-get($map: $colors, $key: "orange"),
+          $amount: 15
+        );
+      }
+      &:active {
+        color: lighten(
+          $color: map-get($map: $colors, $key: "orange"),
+          $amount: 45
+        );
+      }
+    }
+  }
+}
+@media screen and (max-width: $site-width) {
+  .pageContent {
+    padding: 60px 25px 30px;
   }
 }
