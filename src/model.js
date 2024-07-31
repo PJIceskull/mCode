@@ -1,5 +1,6 @@
 // Import Functions
-import { loadPeopleData } from "./index.js";
+// import { loadPeopleData } from "./index.js";
+import { addLoginListeners } from "./index.js";
 
 export function changeRoute() {
   let hashTag = window.location.hash;
@@ -11,14 +12,10 @@ export function changeRoute() {
       // console.log("data " + data);
       $("#app").html(data);
     });
-    if (pageID == "people") {
-      $.get(`pages/people.html`, function (data) {
+    if (pageID == "login" || pageID == "signin") {
+      $.get(`pages/${pageID}.html`, function (data) {
         $("#app").html(data);
-        loadPeopleData();
-      });
-      $(window).on("load", function () {
-        // Put function to load data.
-        loadPeopleData();
+        addLoginListeners();
       });
     }
   } else {

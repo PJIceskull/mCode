@@ -1,52 +1,59 @@
 <div class="createForm">
   <h1>Create Account</h1>
 
-  <div>
+  <div id="firstName_field">
     <h2>First Name<span>*</span></h2>
     <input
       type="text"
       name="fName"
-      id=""
+      id="fName"
       placeholder="Enter Your First Name"
       required
     />
   </div>
 
-  <div>
+  <div id="lastName_field">
     <h2>Last Name<span>*</span></h2>
     <input
       type="text"
       name="lName"
-      id=""
+      id="lName"
       placeholder="Enter Your Last Name"
       required
     />
   </div>
 
-  <div>
+  <div id="email_field">
     <h2>Email<span>*</span></h2>
-    <input type="text" name="" id="" placeholder="Enter Your Email" required />
-  </div>
-
-  <div>
-    <h2>Password<span>*</span></h2>
     <input
       type="text"
-      name=""
-      id=""
-      placeholder="Enter Your Password"
+      name="email"
+      id="Email_Add"
+      placeholder="Enter Your Email"
       required
     />
   </div>
 
-  <div>
+  <div id="password_field">
+    <h2>Password<span>*</span></h2>
+    <input
+      type="password"
+      name="password"
+      id="PWord"
+      placeholder="Enter Your Password"
+      maxlength="8"
+      required
+    />
+  </div>
+
+  <div id="confirmPassword__field">
     <h2>Comfirm Password<span>*</span></h2>
     <input
-      type="text"
-      name=""
-      id=""
+      type="password"
+      name="confirm_password"
+      id="confirm_PWord"
       placeholder="Enter Your Retype Password"
-      required
+      maxlength="8"
     />
   </div>
 
