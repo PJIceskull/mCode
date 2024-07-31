@@ -131,7 +131,15 @@ function initURLListener() {
   changeRoute();
 }
 
-function initListeners() {}
+function initListeners() {
+  // Link to Profile Page
+  $(".profileLink .profile").on("click", function (e) {
+    $.get(`pages/profile.html`, function (data) {
+      // console.log("data " + data);
+      $("#app").html(data);
+    });
+  });
+}
 
 $(document).ready(function () {
   initURLListener();
