@@ -4,17 +4,14 @@ button {
   color: map-get($map: $colors, $key: "white");
   font-family: Roboto-Condensed;
   border: none;
+  transition-duration: 0.25s;
   &:hover {
-    background-color: lighten(
-      $color: map-get($map: $colors, $key: "navy"),
-      $amount: 10%
-    );
+    background-color: map-get($map: $colors, $key: "skyblue");
   }
   &:active {
     background-color: map-get($map: $colors, $key: "white");
-    color: lighten($color: map-get($map: $colors, $key: "navy"), $amount: 10%);
+    color: map-get($map: $colors, $key: "skyblue");
     // border: 3px solid map-get($map: $colors, $key: "navy");
-    outline: 2px solid map-get($map: $colors, $key: "navy");
   }
 }
 .SignInBTN {

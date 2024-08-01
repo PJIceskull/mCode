@@ -370,14 +370,14 @@ button {
   color: #ffffff;
   font-family: Roboto-Condensed;
   border: none;
+  transition-duration: 0.25s;
 }
 button:hover {
-  background-color: #004f85;
+  background-color: #91bed4;
 }
 button:active {
   background-color: #ffffff;
-  color: #004f85;
-  outline: 2px solid #003152;
+  color: #91bed4;
 }
 
 .SignInBTN {
