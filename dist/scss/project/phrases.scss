@@ -1,3 +1,10 @@
+.modelImage,
+.implementGroup {
+  .imageDesc {
+    font-size: 20px;
+  }
+}
+
 .modelImage {
   margin: 0 auto;
   text-align: center;
@@ -9,9 +16,6 @@
     height: 100%;
     width: 100%;
     max-width: 975px;
-  }
-  .imageDesc {
-    font-size: 20px;
   }
 }
 
@@ -90,6 +94,49 @@
     }
   }
 }
+.phase2 {
+  align-items: flex-start;
+  margin-top: 30px;
+  .researchProfile {
+    max-width: 300px;
+    gap: 15px;
+    .profileImg {
+      width: 250px;
+      height: 250px;
+    }
+    h1 {
+      text-align: center;
+      max-width: 275px;
+    }
+    p {
+      text-align: center;
+    }
+  }
+  .advisoryProfile {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 225px;
+    .profileImg {
+      width: 200px;
+      height: 200px;
+    }
+    h1,
+    p {
+      margin-bottom: 0;
+      text-align: center;
+    }
+    h1 {
+      font-family: Roboto-Bold;
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}
 .researchLogos {
   margin-bottom: 60px;
   display: grid;
@@ -130,6 +177,71 @@
   span {
     font-family: Roboto-Bold;
     color: map-get($map: $colors, $key: "orange");
+  }
+}
+
+.implementGroup {
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 680px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 45px;
+}
+.stepWrap {
+  max-width: 675px;
+  .implementBlock {
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 24px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+.implementBlock {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 675px;
+  height: 100px;
+  border-radius: 100px;
+  color: map-get($map: $colors, $key: "white");
+  padding: 0 15px;
+  p {
+    margin: auto;
+    font-family: Roboto-Bold;
+    font-size: 28px;
+  }
+  .stepBlock {
+    background-color: map-get($map: $colors, $key: "white");
+    border-radius: 100%;
+    height: 72px;
+    width: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 4px 0 rgba($color: #000000, $alpha: 0.25);
+  }
+}
+.lightgold {
+  background-color: #f1c231;
+  .stepBlock {
+    color: #fa8a25;
+  }
+}
+.gold {
+  background-color: #bf9002;
+  .stepBlock {
+    color: #a35b1b;
+  }
+}
+.darkgold {
+  background-color: #7f6001;
+  .stepBlock {
+    color: #000000;
   }
 }
 
@@ -201,6 +313,22 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+  .phaseButtons {
+    flex-direction: column;
+    .phaseBTN {
+      height: 100px;
+    }
+  }
+  @media screen and (max-width: calc($iPad-width / 1.5)) {
+    .phaseButtons {
+      a {
+        width: 100%;
+      }
+      .phaseBTN {
+        width: 100%;
+      }
+    }
   }
 }
 @media screen and (max-width: $phone-width) {
