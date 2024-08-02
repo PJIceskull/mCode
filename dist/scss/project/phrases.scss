@@ -6,7 +6,9 @@
 }
 
 .modelImage {
-  margin: 0 auto;
+  // margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 48px;
   text-align: center;
   h3 {
     font-size: 32px;
@@ -16,6 +18,18 @@
     height: 100%;
     width: 100%;
     max-width: 975px;
+  }
+  .imageDesc {
+    margin: 0 auto;
+  }
+}
+
+.pageSection {
+  h2 {
+    // margin-bottom: 25px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 2.5px;
   }
 }
 
@@ -94,12 +108,17 @@
     }
   }
 }
-.phase2 {
-  align-items: flex-start;
+.phase2,
+.phase3 {
   margin-top: 30px;
   .researchProfile {
-    max-width: 300px;
     gap: 15px;
+  }
+}
+.phase2 {
+  align-items: flex-start;
+  .researchProfile {
+    max-width: 300px;
     .profileImg {
       width: 250px;
       height: 250px;
@@ -110,6 +129,11 @@
     }
     p {
       text-align: center;
+    }
+  }
+  .phase3 {
+    .researchProfile {
+      max-width: 280px;
     }
   }
   .advisoryProfile {
@@ -156,6 +180,9 @@
     width: 250px;
     height: 250px;
   }
+  p {
+    margin: 0 auto;
+  }
 }
 .partnerLogo {
   img {
@@ -183,6 +210,7 @@
 .implementGroup {
   margin: 0 auto;
   margin-top: 40px;
+  margin-bottom: 28px;
   // max-width: 680px;
   display: flex;
   align-items: center;
@@ -251,6 +279,19 @@
   background-color: #7f6001;
   .stepBlock {
     color: #000000;
+  }
+}
+.regularList {
+  margin-bottom: 20px;
+  p {
+    margin-bottom: 0;
+  }
+  ul {
+    margin-left: 40px;
+    // font-style: italic;
+    li {
+      padding-left: 5px;
+    }
   }
 }
 

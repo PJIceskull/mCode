@@ -141,6 +141,11 @@ h3 {
 .pageContent p a:active {
   color: #ffe8da;
 }
+.pageContent ul {
+  font-size: 24px;
+  font-family: Roboto-Regular;
+  max-width: 1230px;
+}
 
 @media screen and (max-width: 1280px) {
   .pageContent {
@@ -755,7 +760,8 @@ button:active {
 }
 
 .modelImage {
-  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 48px;
   text-align: center;
 }
 .modelImage h3 {
@@ -766,6 +772,15 @@ button:active {
   height: 100%;
   width: 100%;
   max-width: 975px;
+}
+.modelImage .imageDesc {
+  margin: 0 auto;
+}
+
+.pageSection h2 {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 2.5px;
 }
 
 .teamContainerRow {
@@ -844,13 +859,20 @@ button:active {
   margin-bottom: 0;
 }
 
+.phase2,
+.phase3 {
+  margin-top: 30px;
+}
+.phase2 .researchProfile,
+.phase3 .researchProfile {
+  gap: 15px;
+}
+
 .phase2 {
   align-items: flex-start;
-  margin-top: 30px;
 }
 .phase2 .researchProfile {
   max-width: 300px;
-  gap: 15px;
 }
 .phase2 .researchProfile .profileImg {
   width: 250px;
@@ -862,6 +884,9 @@ button:active {
 }
 .phase2 .researchProfile p {
   text-align: center;
+}
+.phase2 .phase3 .researchProfile {
+  max-width: 280px;
 }
 .phase2 .advisoryProfile {
   display: flex;
@@ -909,6 +934,9 @@ button:active {
   width: 250px;
   height: 250px;
 }
+.libraryLogos p {
+  margin: 0 auto;
+}
 
 .partnerLogo img {
   height: 100%;
@@ -934,6 +962,7 @@ button:active {
 .implementGroup {
   margin: 0 auto;
   margin-top: 40px;
+  margin-bottom: 28px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -994,6 +1023,19 @@ button:active {
 }
 .darkgold .stepBlock {
   color: #000000;
+}
+
+.regularList {
+  margin-bottom: 20px;
+}
+.regularList p {
+  margin-bottom: 0;
+}
+.regularList ul {
+  margin-left: 40px;
+}
+.regularList ul li {
+  padding-left: 5px;
 }
 
 .phaseButtons {
