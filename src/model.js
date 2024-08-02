@@ -7,6 +7,9 @@ export function changeRoute() {
   let pageID = hashTag.replace("#", "");
   //   console.log(hashTag + ' ' + pageID);
 
+  // Scrool to Top of the Page
+  scroll(0, 0);
+
   if (pageID != "") {
     $.get(`pages/${pageID}.html`, function (data) {
       // console.log("data " + data);
