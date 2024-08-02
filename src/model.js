@@ -7,7 +7,7 @@ export function changeRoute() {
   let pageID = hashTag.replace("#", "");
   //   console.log(hashTag + ' ' + pageID);
 
-  // Scrool to Top of the Page
+  // Scroll to Top of the Page
   scroll(0, 0);
 
   if (pageID != "") {
