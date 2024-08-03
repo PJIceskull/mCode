@@ -106,6 +106,16 @@ h3 {
   font-style: italic;
   font-weight: 400;
 }
+.pageContent header h2 a {
+  text-decoration: none;
+  color: #003152;
+  font-family: Roboto-Condensed;
+  font-weight: 300;
+  transition-duration: 0.3s;
+}
+.pageContent header h2 a:hover {
+  color: #91bed4;
+}
 .pageContent h1,
 .pageContent h2 {
   color: #003152;
@@ -1143,6 +1153,88 @@ button:active {
   .libraryLogos {
     justify-content: center;
   }
+}
+.pubHeading {
+  background-color: #d9e8f5;
+  padding: 50px clamp(25px, 3.125vw, 50px);
+  border-radius: 15px;
+}
+
+.publicGroup {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.publicGroup h2 {
+  font-size: clamp(32px, 2.5vw, 40px);
+  font-family: Roboto-Condensed;
+  font-weight: 700;
+  font-style: italic;
+  align-self: flex-start;
+}
+.publicGroup button {
+  background-color: #ffffff;
+  border: 3px solid #003152;
+  border-radius: 8px;
+  padding: 23px 38px;
+  align-self: flex-end;
+  margin-right: 50px;
+  margin-top: 32px;
+}
+.publicGroup button a {
+  color: #000000;
+  font-family: Roboto-Medium;
+  font-size: 28px;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+.publicGroup button:hover {
+  border: 3px solid #91bed4;
+}
+.publicGroup button:hover a {
+  color: #91bed4;
+}
+.publicGroup button:active {
+  border: 3px solid #003152;
+}
+.publicGroup button:active a {
+  color: #003152;
+}
+
+.journalLinks {
+  max-width: 1280px;
+  width: 100%;
+  border-bottom: 3px solid #003152;
+}
+
+.journalEntry {
+  background-color: #d9e8f5;
+  width: 100%;
+  padding: 38px 35px;
+  border-top: 3px solid #003152;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+.journalEntry h3,
+.journalEntry h4,
+.journalEntry p {
+  margin-bottom: 0;
+  font-family: Roboto-Condensed;
+}
+.journalEntry h3 {
+  font-weight: 700;
+  font-size: 36px;
+  text-decoration: underline;
+  color: #003152;
+}
+.journalEntry h4 {
+  font-weight: 500;
+  font-size: 28px;
 }
 
 /*# sourceMappingURL=styles.css.map */

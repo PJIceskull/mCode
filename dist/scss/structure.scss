@@ -59,6 +59,16 @@ h3 {
         font-style: italic;
         font-weight: $regular;
       }
+      a {
+        text-decoration: none;
+        color: map-get($map: $colors, $key: "navy");
+        font-family: Roboto-Condensed;
+        font-weight: $light;
+        transition-duration: 0.3s;
+        &:hover {
+          color: map-get($map: $colors, $key: "skyblue");
+        }
+      }
     }
   }
   h1,

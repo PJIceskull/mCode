@@ -1,0 +1,81 @@
+.pubHeading {
+  background-color: map-get($map: $colors, $key: "lightblue");
+  //   padding: 50px;
+  padding: 50px clamp(25px, 3.125vw, 50px);
+  border-radius: 15px;
+}
+.publicGroup {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  h2 {
+    // font-size: 40px;
+    font-size: clamp(32px, 2.5vw, 40px);
+    font-family: Roboto-Condensed;
+    font-weight: $bold;
+    font-style: italic;
+    align-self: flex-start;
+  }
+  button {
+    background-color: map-get($map: $colors, $key: "white");
+    border: 3px solid map-get($map: $colors, $key: "navy");
+    border-radius: 8px;
+    padding: 23px 38px;
+    align-self: flex-end;
+    margin-right: 50px;
+    margin-top: 32px;
+    a {
+      color: #000000;
+      font-family: Roboto-Medium;
+      font-size: 28px;
+      text-decoration: none;
+      transition-duration: 0.3s;
+    }
+    &:hover {
+      border: 3px solid map-get($map: $colors, $key: "skyblue");
+      a {
+        color: map-get($map: $colors, $key: "skyblue");
+      }
+    }
+    &:active {
+      border: 3px solid map-get($map: $colors, $key: "navy");
+      a {
+        color: map-get($map: $colors, $key: "navy");
+      }
+    }
+  }
+}
+.journalLinks {
+  max-width: $site-width;
+  width: 100%;
+  border-bottom: 3px solid map-get($map: $colors, $key: "navy");
+}
+.journalEntry {
+  background-color: map-get($map: $colors, $key: "lightblue");
+  width: 100%;
+  padding: 38px 35px;
+  border-top: 3px solid map-get($map: $colors, $key: "navy");
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 15px;
+  h3,
+  h4,
+  p {
+    margin-bottom: 0;
+    font-family: Roboto-Condensed;
+  }
+  h3 {
+    font-weight: $bold;
+    font-size: 36px;
+    text-decoration: underline;
+    color: map-get($map: $colors, $key: "navy");
+  }
+  h4 {
+    font-weight: $medium;
+    font-size: 28px;
+  }
+}
