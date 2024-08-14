@@ -1,11 +1,4 @@
 // Color Codes
-$color1: #003152;
-$color2: #91bed4;
-$color3: #d9e8f5;
-$color4: #ffffff;
-$color5: #f26101;
-$color6: #7a1705;
-
 // Color Palette using Map value
 $colors: (
   "navy": #003152,
@@ -17,6 +10,11 @@ $colors: (
 );
 // Remove '/' in code below
 // @debug map-get($/map: $-colors, $/key: 'red');
+// mCode Model Colors
+$darkslateblue: #3d3a78;
+$purple: #853183;
+$violetred: #c4186a;
+$crimson: #e53734;
 
 // Device Sizes
 $site-width: 1280px;
