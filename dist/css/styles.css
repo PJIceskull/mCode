@@ -1154,6 +1154,139 @@ button:active {
     justify-content: center;
   }
 }
+.communContextLevel h3 {
+  color: #003152;
+}
+
+.dataProgramLevel h3 {
+  color: #3d3a78;
+}
+
+.dataAccessLevel h3 {
+  color: #853183;
+}
+
+.interDataLevel h3 {
+  color: #c4186a;
+}
+
+.valueLevel h3 {
+  color: #e53734;
+}
+
+.subpageSection {
+  background-color: #003152;
+  transition-duration: 0.5s;
+  height: 150px;
+  margin-bottom: 25px;
+}
+.subpageSection:hover {
+  background-color: #91bed4;
+}
+.subpageSection a {
+  text-decoration: none;
+}
+
+.subpageLink {
+  background-color: #d9e8f5;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+.subpageLink h2,
+.subpageLink img {
+  transition-duration: 0.4s;
+}
+.subpageLink h2 {
+  font-size: 48px;
+  font-family: Roboto-Condensed;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.subpageLink img {
+  height: 72px;
+  filter: brightness(0) saturate(100%) invert(15%) sepia(27%) saturate(3419%) hue-rotate(177deg) brightness(98%) contrast(105%);
+}
+.subpageLink:hover {
+  background-color: #ffffff;
+}
+.subpageLink:hover h2 {
+  color: #91bed4;
+  margin-right: 15%;
+}
+.subpageLink:hover img {
+  filter: brightness(0) saturate(100%) invert(98%) sepia(28%) saturate(4451%) hue-rotate(168deg) brightness(87%) contrast(89%);
+}
+
+.mCodeModel {
+  margin-top: 30px;
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.mCodeModel h2 {
+  font-size: clamp(28px, 2vw, 32px);
+  color: #003152;
+}
+.mCodeModel img {
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.modelBox {
+  padding: 20px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  max-width: 380px;
+  min-width: 350px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 8px;
+  position: absolute;
+}
+.modelBox h3 {
+  margin-bottom: 0;
+  font-size: 24px;
+}
+.modelBox ul {
+  max-width: 100%;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .subpageLink {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 800px) {
+  .subpageLink {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 430px) {
+  .subpageSection {
+    height: 100px;
+  }
+  .subpageLink {
+    width: 100%;
+  }
+  .subpageLink h2 {
+    font-size: 28px;
+  }
+  .subpageLink img {
+    height: 48px;
+  }
+}
 .pubHeading {
   background-color: #d9e8f5;
   padding: 50px clamp(25px, 3.125vw, 50px);

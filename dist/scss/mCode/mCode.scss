@@ -1,0 +1,139 @@
+.communContextLevel {
+  h3 {
+    color: map-get($map: $colors, $key: "navy");
+  }
+}
+.dataProgramLevel {
+  h3 {
+    color: $darkslateblue;
+  }
+}
+.dataAccessLevel {
+  h3 {
+    color: $purple;
+  }
+}
+.interDataLevel {
+  h3 {
+    color: $violetred;
+  }
+}
+.valueLevel {
+  h3 {
+    color: $crimson;
+  }
+}
+
+.subpageSection {
+  background-color: map-get($map: $colors, $key: "navy");
+  transition-duration: 0.5s;
+  height: 150px;
+  margin-bottom: 25px;
+  &:hover {
+    background-color: map-get($map: $colors, $key: "skyblue");
+  }
+  a {
+    text-decoration: none;
+  }
+}
+.subpageLink {
+  background-color: map-get($map: $colors, $key: "lightblue");
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+  h2,
+  img {
+    transition-duration: 0.4s;
+  }
+  h2 {
+    font-size: 48px;
+    font-family: Roboto-Condensed;
+    font-weight: $bold;
+    margin-bottom: 0;
+  }
+  img {
+    height: 72px;
+    filter: brightness(0) saturate(100%) invert(15%) sepia(27%) saturate(3419%)
+      hue-rotate(177deg) brightness(98%) contrast(105%);
+  }
+  &:hover {
+    background-color: map-get($map: $colors, $key: "white");
+    h2 {
+      color: map-get($map: $colors, $key: "skyblue");
+      margin-right: 15%;
+    }
+    img {
+      filter: brightness(0) saturate(100%) invert(98%) sepia(28%)
+        saturate(4451%) hue-rotate(168deg) brightness(87%) contrast(89%);
+    }
+  }
+}
+
+.mCodeModel {
+  // margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  h2 {
+    font-size: clamp(28px, 2vw, 32px);
+    color: map-get($map: $colors, $key: "navy");
+  }
+  img {
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+.modelBox {
+  padding: 20px;
+  border-radius: 3px;
+  background-color: map-get($map: $colors, $key: "white");
+  max-width: 380px;
+  min-width: 350px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 8px;
+  position: absolute;
+  h3 {
+    margin-bottom: 0;
+    font-size: 24px;
+  }
+  ul {
+    max-width: 100%;
+    font-size: 20px;
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .subpageLink {
+    width: 75%;
+  }
+  @media screen and (max-width: $site-height) {
+    .subpageLink {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: $phone-width) {
+    .subpageSection {
+      height: 100px;
+    }
+    .subpageLink {
+      width: 100%;
+      h2 {
+        font-size: 28px;
+      }
+      img {
+        height: 48px;
+      }
+    }
+  }
+}
