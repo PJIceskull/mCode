@@ -1294,6 +1294,22 @@ button:active {
     height: 48px;
   }
 }
+.term h2 {
+  font-family: Roboto-Condensed;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.term .termBox {
+  background-color: #d9e8f5;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.term .termBox h2 {
+  margin-bottom: 0;
+}
+
 .pubHeading {
   background-color: #d9e8f5;
   padding: 50px clamp(25px, 3.125vw, 50px);

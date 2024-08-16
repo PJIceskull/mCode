@@ -1,0 +1,17 @@
+.term {
+  h2 {
+    font-family: Roboto-Condensed;
+    font-weight: $bold;
+    text-transform: capitalize;
+  }
+  .termBox {
+    background-color: map-get($map: $colors, $key: "lightblue");
+    border-radius: 10px;
+    width: fit-content;
+    padding: 15px;
+    margin-bottom: 15px;
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+}
