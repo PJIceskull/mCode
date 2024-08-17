@@ -33,6 +33,28 @@ footer {
         align-items: center;
         justify-content: flex-start;
         transition-duration: 0.3s;
+        &:hover {
+          a {
+            color: map-get($map: $colors, $key: "skyblue");
+            margin-right: 8px;
+          }
+          .arrowIcon {
+            img {
+              filter: $skyblueFilter;
+            }
+          }
+          &:active {
+            a {
+              transition-duration: 0.1s;
+              color: map-get($map: $colors, $key: "lightblue");
+            }
+            .arrowIcon {
+              img {
+                filter: $lightblueFilter;
+              }
+            }
+          }
+        }
       }
     }
     a {
@@ -41,19 +63,12 @@ footer {
       font-family: Roboto-Bold;
       font-size: 20px;
       transition-duration: 0.3s;
-      &:hover {
-        color: map-get($map: $colors, $key: "skyblue");
-        margin-right: 8px;
-      }
-      &:active {
-        transition-duration: 0.1s;
-        color: map-get($map: $colors, $key: "lightblue");
-      }
     }
     .arrowIcon {
       height: 30px;
       img {
         height: 100%;
+        filter: brightness(1);
       }
     }
   }

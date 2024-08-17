@@ -311,6 +311,20 @@ footer .contactSection ul li {
   justify-content: flex-start;
   transition-duration: 0.3s;
 }
+footer .contactSection ul li:hover a {
+  color: #91bed4;
+  margin-right: 8px;
+}
+footer .contactSection ul li:hover .arrowIcon img {
+  filter: brightness(0) saturate(100%) invert(72%) sepia(23%) saturate(421%) hue-rotate(155deg) brightness(99%) contrast(87%);
+}
+footer .contactSection ul li:hover:active a {
+  transition-duration: 0.1s;
+  color: #d9e8f5;
+}
+footer .contactSection ul li:hover:active .arrowIcon img {
+  filter: brightness(0) saturate(100%) invert(92%) sepia(3%) saturate(1447%) hue-rotate(179deg) brightness(101%) contrast(92%);
+}
 footer .contactSection a {
   color: #ffffff;
   text-decoration: none;
@@ -318,19 +332,12 @@ footer .contactSection a {
   font-size: 20px;
   transition-duration: 0.3s;
 }
-footer .contactSection a:hover {
-  color: #91bed4;
-  margin-right: 8px;
-}
-footer .contactSection a:active {
-  transition-duration: 0.1s;
-  color: #d9e8f5;
-}
 footer .contactSection .arrowIcon {
   height: 30px;
 }
 footer .contactSection .arrowIcon img {
   height: 100%;
+  filter: brightness(1);
 }
 footer hr {
   display: none;
